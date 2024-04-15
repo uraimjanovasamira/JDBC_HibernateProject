@@ -26,8 +26,7 @@ public class UserDaoHibernateImpl implements UserDao {
                         id       SERIAL PRIMARY KEY NOT NULL,
                         name     VARCHAR,
                         lastname VARCHAR,
-                        age      INTEGER,
-                        card_id TEXT UNIQUE );""";
+                        age      INTEGER );""";
 
         Connection connection = Util.getConnection();
         try {
